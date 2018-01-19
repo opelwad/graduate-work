@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form method="POST" name="login">
+
+
+            <div class="formwrap">
+                <h2 class="login-h">Вход в систему</h2>
+
+                <label for="login" class="login-label">Логин:<br/>
+
+                    <input type="text" name="login" id="login" required>
+                </label>
+
+                <label for="password" class="password-label">Пароль:<br/>
+                    <input type="password" name="password" id="password" required>
+                </label>
+                <br/>
+
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember" class="remember" title="Запоминает пароль и не запрашивает его повторно с данного устройства, пока вы самостоятельно не выйдите из системы">Запомнить меня</label>
+
+            </div>
+
+            <input type="submit" value="Вход" class="submit" title="Прыгнуть в большую кроличью нору">
+
+        </form>
+
+            <p class="copyright">© Opelwad 2017</p>
+    </main>
+</body>
+
+</html>
