@@ -4,39 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <a class="site-name">SoS</a>
+        
+        <input type="checkbox" name="burger-checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label for="burger-checkbox" class="burger-button"></label>
+
+        <nav class="header-nav">
+            <a href="#" class="add-task">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+        </nav>
+    </header>
     <main>
-        <form method="POST" name="login">
+        <aside>
+            <details class="sidebar-tasks" open>
+                <summary>Мои задачи</summary>
+                <nav class="my-tasks">
+                    <a href="#">Ожидает обработки</a>
+                    <a href="#">В работе</a>
+                    <a href="#">Завершен</a>
+                </nav>
+            </details>
 
+            <details class="sidebar-tasks" open>
+                <summary>Задачи на офисе</summary>
+                <nav class="my-tasks">
+                    <a href="#">Ожидает обработки</a>
+                    <a href="#">В работе</a>
+                    <a href="#">Завершен</a>
+                </nav>
+            </details>
 
-            <div class="formwrap">
-                <h2 class="login-h">Вход в систему</h2>
+            <details class="sidebar-tasks" open>
+                <summary>Все задачи</summary>
+                <nav class="my-tasks">
+                    <a href="#">Ожидает обработки</a>
+                    <a href="#">В работе</a>
+                    <a href="#">Завершен</a>
+                </nav>
+            </details>
+        </aside>
 
-                <label for="login" class="login-label">Логин:<br/>
+        <article>
+            <h2 class="tasks">Мои наряды</h2>
 
-                    <input type="text" name="login" id="login" required>
-                </label>
+            <section>
+                <h2></h2>
+            </section>
 
-                <label for="password" class="password-label">Пароль:<br/>
-                    <input type="password" name="password" id="password" required>
-                </label>
-                <br/>
-
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember" class="remember" title="Запоминает пароль и не запрашивает его повторно с данного устройства, пока вы самостоятельно не выйдите из системы">Запомнить меня</label>
-
-            </div>
-
-            <input type="submit" value="Вход" class="submit" title="Прыгнуть в большую кроличью нору">
-
-        </form>
-
-            <p class="copyright">© Opelwad 2017</p>
+        </article>
     </main>
+
+    <footer>
+        <p class="copyright">opelwad (c)2018</p>
+    </footer>
+
 </body>
 
 </html>
